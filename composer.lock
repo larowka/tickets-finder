@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4842c22e789d247c4b660e69490545f",
+    "content-hash": "f6df47d72c771c37dc4c15e75a522312",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1320,6 +1320,70 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.6.2"
             },
             "time": "2021-09-28T15:47:34+00:00"
+        },
+        {
+            "name": "larowka/kudago-api",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/larowka/kudago-api.git",
+                "reference": "9bf63b3de111e3e5b0ce6c07439facedc68d8a39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/larowka/kudago-api/zipball/9bf63b3de111e3e5b0ce6c07439facedc68d8a39",
+                "reference": "9bf63b3de111e3e5b0ce6c07439facedc68d8a39",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0",
+                "nesbot/carbon": "^2.53.1",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Larowka\\KudaGo\\Laravel\\KudaGoServiceProvider"
+                    ],
+                    "aliases": {
+                        "KudaGo": "Larowka\\KudaGo\\Laravel\\KudaGo"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Larowka\\KudaGo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serj Toropilin",
+                    "email": "larowka@icloud.com",
+                    "homepage": "https://github.com/larowka",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Wrapper for KudaGo API",
+            "homepage": "https://github.com/larowka/kudago-api",
+            "keywords": [
+                "api",
+                "kudago"
+            ],
+            "support": {
+                "issues": "https://github.com/larowka/kudago-api/issues",
+                "source": "https://github.com/larowka/kudago-api"
+            },
+            "time": "2021-10-31T13:50:34+00:00"
         },
         {
             "name": "league/commonmark",
@@ -7947,13 +8011,13 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
